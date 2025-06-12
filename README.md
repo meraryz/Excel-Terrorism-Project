@@ -9,7 +9,7 @@ There are three dashboards, each delving into a different level of depth on glob
 ### Dashboard 2
 ![](screenshots/dashboard2.JPG)
 ### Dashboard 3
-![](screenshots\dashboard3.jpg)
+![](screenshots/dashboard3.JPG)
 
 ### Dashboard File
 My final dashboard is in [project.xlsx](project.xlsx)
@@ -29,10 +29,10 @@ To view the database: [Click Here](https://www.kaggle.com/datasets/START-UMD/gtd
 ## Cleaning the database
 The original database contains 135 columns. I used Power Query to remove irrelevant columns, rename columns for better clarity, and reformat some of the values to better organize the information.
 
-![](screenshots\powerquery.jpg)
+![](screenshots/powerquery.JPG)
 
 ## Dashboard 1 Build
-![](screenshots\dashboard1.jpg)
+![](screenshots/dashboard1.JPG)
 
 1. I used a PivotTable created from the database.
 The rows represent countries, and the values show the count of events.
@@ -46,7 +46,7 @@ Since the PivotTable is filtered, I used a formula to return "NA" for countries 
 
 ``=LET(val, GETPIVOTDATA("Events Count", $B$4, "Country", D4), IF(ISNUMBER(val), val, NA()))``
 
-![](screenshots\dashboard1_2.jpg)
+![](screenshots/dashboard1_2.JPG)
 
 3. The user can select a specific country to see the number of terror attacks, with region and year filters applied.
 I created a data validation drop-down list for selecting the country, and the terror attacks count is pulled from the PivotTable based on the selected country.
@@ -58,31 +58,31 @@ I created a data validation drop-down list for selecting the country, and the te
 ``=TAKE(SORT(FILTER(Terror_Around_the_World_Table!$A$4:$B$208, Terror_Around_the_World_Table!$B$4:$B$208<>0), 2, -1), 10)``
 
 ## Dashboard 2 Build
-![](screenshots\dashboard2.jpg)
+![](screenshots/dashboard2.JPG)
 
 1. I used a PivotTable created from the database.
 The rows represent terror groups, the columns represent attack types, and the values show the count of events. Top 5 filter is applied to the PivotTable.
 Two slicers were added to allow the user to filter the information by country and by year or a range of years.
 
-![](screenshots\dashboard2_1.jpg)
+![](screenshots/dashboard2_1.JPG)
 
 2. I created a stacked bar chart that pulls data from the PivotTable and displays the number of terror attacks along with the distribution of attack types, based on the applied filters.
 
-![](screenshots\dashboard2_2.jpg)
+![](screenshots/dashboard2_2.JPG)
 
 3. I created a line chart that pulls data from the PivotTable and displays the number of terror attacks over the years, based on the applied filters.
 A trendline was added to show whether the number of attacks is increasing or decreasing over time.
 
-![](screenshots\dashboard2_3.jpg)
+![](screenshots/dashboard2_3.JPG)
 
 ## Dashboard 3 Build
-![](screenshots\dashboard3.jpg)
+![](screenshots/dashboard3.JPG)
 
 1. I used a PivotTable created from the database.
 The rows represent the attack type, and the values show the count of events.
 Three slicers were added to allow the user to filter the information by country, by terror group name and by year or a range of years.
 
-![](screenshots\dashboard3_1.jpg)
+![](screenshots/dashboard3_1.JPG)
 
 ## Conclusion
 In conclusion, this project provides an interactive and visual exploration of global terror attacks from 1970 to 2017. Through the use of PivotTables, slicers, and various chart types, users can filter and analyze the data by region, country, year, terror group, and attack type. The dashboard makes it easy to identify trends, compare distributions, and gain insights into the scale and nature of terrorism across different dimensions. By transforming complex data into accessible visuals, this tool supports deeper investigation and understanding of global terrorism patterns.
