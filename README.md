@@ -1,4 +1,4 @@
-# Excel Terror Attacks Project
+# Excel Global Terrorism Project
 
 ## Introduction
 This project interactively visualizes information about terror attacks around the world from 1970 to 2017. It was created to make this information accessible and visual, allowing users to explore, investigate, and identify trends related to terror attacks and terrorist groups worldwide.
