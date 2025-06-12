@@ -5,7 +5,7 @@ This project interactively visualizes information about terror attacks around th
 There are three dashboards, each delving into a different level of depth on global terrorism.
 
 ### Dashboard 1
-![](screenshots\dashboard1.jpg)
+![](screenshots/dashboard1.JPG)
 ### Dashboard 2
 ![](screenshots\dashboard2.jpg)
 ### Dashboard 3
