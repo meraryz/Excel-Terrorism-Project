@@ -7,7 +7,7 @@ There are three dashboards, each delving into a different level of depth on glob
 ### Dashboard 1
 ![](screenshots/dashboard1.JPG)
 ### Dashboard 2
-![](screenshots/dashboard2.jpg)
+![](screenshots/dashboard2.JPG)
 ### Dashboard 3
 ![](screenshots\dashboard3.jpg)
 
